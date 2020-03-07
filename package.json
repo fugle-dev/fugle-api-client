@@ -1,0 +1,9 @@
+{
+  "name": "fugle",
+  "version": "0.1.0",
+  "description": "Fugle API client library for JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/chunkai1312/fugle.git",
+  "author": "Chun-Kai Wang <chunkai1312@gmail.com>",
+  "license": "MIT"
+}
