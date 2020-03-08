@@ -6,8 +6,13 @@
   "repository": "https://github.com/chunkai1312/fugle.git",
   "author": "Chun-Kai Wang <chunkai1312@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "qs": "^6.9.1"
+  },
   "devDependencies": {
     "@types/node": "^13.9.0",
+    "@types/qs": "^6.9.1",
     "@typescript-eslint/eslint-plugin": "^2.22.0",
     "@typescript-eslint/parser": "^2.22.0",
     "eslint": "^6.8.0",
