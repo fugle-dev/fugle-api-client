@@ -80,7 +80,6 @@ web_modules/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
@@ -105,3 +104,8 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+dist
+lib
+es
+types
