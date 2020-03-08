@@ -1,4 +1,4 @@
-import Fugle from '../src/fugle';
+import Fugle from '../src';
 import axios from 'axios';
 import WebSocket from 'isomorphic-ws';
 

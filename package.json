@@ -11,7 +11,8 @@
     "test": "jest",
     "test:watch": "npm test -- --watch",
     "test:cov": "npm test -- --coverage",
-    "lint": "eslint --ext js,ts src test",
+    "coverage": "codecov",
+    "lint": "eslint --ext ts src",
     "check-types": "tsc --noEmit"
   },
   "repository": "https://github.com/chunkai1312/fugle.git",
@@ -30,6 +31,7 @@
     "@types/ws": "^7.2.2",
     "@typescript-eslint/eslint-plugin": "^2.22.0",
     "@typescript-eslint/parser": "^2.22.0",
+    "codecov": "^3.6.5",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
     "rollup": "^1.32.1",
