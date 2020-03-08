@@ -1,4 +1,5 @@
 import axios, { AxiosPromise } from 'axios';
+import WebSocket from 'isomorphic-ws';
 import qs from 'qs';
 
 export interface FugleOptions {
@@ -25,6 +26,11 @@ export class Fugle {
   public api(path: string, params: object): AxiosPromise {
     const url = this.compileUrl(path, params);
     return axios(url);
+  }
+
+  public ws(path: string, params: object): WebSocket {
+    const url = this.compileUrl(path, params);
+    return new WebSocket(url);
   }
 
   private compileUrl(path: string, params: object): string {
