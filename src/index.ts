@@ -1,1 +1,1 @@
-export * from './fugle';
+export { default } from './fugle';

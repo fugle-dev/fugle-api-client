@@ -46,3 +46,5 @@ export class Fugle {
     return baseUrl + endpoint + query;
   }
 }
+
+export default Fugle;
