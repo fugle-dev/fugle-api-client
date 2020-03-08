@@ -13,9 +13,25 @@
     "test:cov": "npm test -- --coverage",
     "coverage": "codecov",
     "lint": "eslint --ext ts src",
-    "check-types": "tsc --noEmit"
+    "release": "standard-version"
   },
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src",
+    "types"
+  ],
   "repository": "https://github.com/chunkai1312/fugle.git",
+  "keywords": [
+    "fugle",
+    "stock",
+    "realtime",
+    "api",
+    "ws",
+    "websocket",
+    "client"
+  ],
   "author": "Chun-Kai Wang <chunkai1312@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -40,6 +56,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-typescript2": "^0.26.0",
+    "standard-version": "^7.1.0",
     "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
