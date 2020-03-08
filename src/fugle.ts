@@ -8,6 +8,7 @@ export interface FugleOptions {
 
 export class Fugle {
   private static BASE_REALTIME_URL = 'https://api.fugle.tw/realtime';
+  private static BASE_REALTIME_WS = 'wss://api.fugle.tw/realtime';
   private static VERSION = 'v0';
   private _apiToken: string;
 
@@ -29,14 +30,16 @@ export class Fugle {
   }
 
   public ws(path: string, params: object): WebSocket {
-    const url = this.compileUrl(path, params);
+    const url = this.compileUrl(path, params, 'ws');
     return new WebSocket(url);
   }
 
-  private compileUrl(path: string, params: object): string {
+  private compileUrl(path: string, params: object, protocol?: string): string {
     params = { apiToken: this.apiToken, ...params };
 
-    const baseUrl = Fugle.BASE_REALTIME_URL + '/' + Fugle.VERSION;
+    const baseUrl = (protocol === 'ws')
+      ? Fugle.BASE_REALTIME_WS + '/' + Fugle.VERSION
+      : Fugle.BASE_REALTIME_URL + '/' + Fugle.VERSION;
 
     /* istanbul ignore next */
     const endpoint = (path.indexOf('/') === 0) ? path : '/' + path;

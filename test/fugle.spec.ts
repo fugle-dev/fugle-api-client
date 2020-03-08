@@ -39,7 +39,7 @@ describe('Fugle', () => {
   describe('#ws', () => {
     it('should invoke ws with compiled url', () => {
       const fugle = new Fugle({ apiToken: 'demo' });
-      const url = 'https://api.fugle.tw/realtime/v0/intraday/quote?apiToken=demo&symbolId=2884';
+      const url = 'wss://api.fugle.tw/realtime/v0/intraday/quote?apiToken=demo&symbolId=2884';
       fugle.ws('/intraday/quote', { symbolId: '2884' });
       expect(WebSocket).toBeCalledWith(url);
     });
