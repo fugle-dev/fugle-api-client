@@ -37,7 +37,10 @@ export class Fugle {
     params = { apiToken: this.apiToken, ...params };
 
     const baseUrl = Fugle.BASE_REALTIME_URL + '/' + Fugle.VERSION;
+
+    /* istanbul ignore next */
     const endpoint = (path.indexOf('/') === 0) ? path : '/' + path;
+
     const query = '?' + qs.stringify(params);
 
     return baseUrl + endpoint + query;
