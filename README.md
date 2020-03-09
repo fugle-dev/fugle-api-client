@@ -58,7 +58,7 @@ fugle
 
 ## License
 
-MIT © [Chun-Kai Wang](https://github.com/chunkai1312)
+[MIT](LICENSE)
 
 [npm-image]: https://img.shields.io/npm/v/fugle.svg
 [npm-url]: https://npmjs.org/package/fugle
