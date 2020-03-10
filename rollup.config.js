@@ -46,7 +46,7 @@ export default [
     output: {
       name: 'Fugle',
       file: 'dist/fugle.min.js',
-      format: 'umd'
+      format: 'umd',
     },
     plugins: [
       resolve({ mainFields: ['jsnext', 'preferBuiltins', 'browser'] }),

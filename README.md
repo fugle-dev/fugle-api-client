@@ -1,4 +1,4 @@
-# Fugle
+# Fugle API Client
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -62,7 +62,7 @@ fugle
 
 [npm-image]: https://img.shields.io/npm/v/fugle.svg
 [npm-url]: https://npmjs.org/package/fugle
-[travis-image]: https://img.shields.io/travis/chunkai1312/fugle.svg
-[travis-url]: https://travis-ci.org/chunkai1312/fugle
-[codecov-image]: https://img.shields.io/codecov/c/github/chunkai1312/fugle.svg
-[codecov-url]: https://codecov.io/gh/chunkai1312/fugle
+[travis-image]: https://img.shields.io/travis/fortuna-intelligence/fugle-api-client.svg
+[travis-url]: https://travis-ci.org/fortuna-intelligence/fugle-api-client
+[codecov-image]: https://img.shields.io/codecov/c/github/fortuna-intelligence/fugle-api-client.svg
+[codecov-url]: https://codecov.io/gh/fortuna-intelligence/fugle-api-client
