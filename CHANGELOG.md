@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/fortuna-intelligence/fugle/compare/v0.1.0...v0.2.0) (2020-10-26)
+
+
+### Features
+
+* support for intraday odd lot trading ([891785a](https://github.com/fortuna-intelligence/fugle/commit/891785a72004bb9ff20b10a9ac94a91b66ed50c5))
+
 ## 0.1.0 (2020-03-08)
 
 
