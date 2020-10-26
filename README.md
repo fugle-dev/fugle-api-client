@@ -42,6 +42,14 @@ fugle
   .then(res => console.log(res.data))
 ```
 
+**Intraday odd lot trading:**
+
+```js
+fugle
+  .api('/intraday/quote', { symbolId: '2884', oddLot: true })
+  .then(res => console.log(res.data))
+```
+
 ### WebSocket
 
 ```js

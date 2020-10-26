@@ -6,6 +6,12 @@ export interface FugleOptions {
   apiToken?: string;
 }
 
+export interface FugleParams {
+  symbolId: string;
+  apiToken?: string;
+  oddLot?: boolean;
+}
+
 export class Fugle {
   private static BASE_REALTIME_URL = 'https://api.fugle.tw/realtime';
   private static BASE_REALTIME_WS = 'wss://api.fugle.tw/realtime';
@@ -24,12 +30,12 @@ export class Fugle {
     this._apiToken = value;
   }
 
-  public api(path: string, params: object): AxiosPromise {
-    const url = this.compileUrl(path, params);
+  public api(path: string, params: FugleParams): AxiosPromise {
+    const url = this.compileUrl(path, { oddLot: false, ...params });
     return axios(url);
   }
 
-  public ws(path: string, params: object): WebSocket {
+  public ws(path: string, params: FugleParams): WebSocket {
     const url = this.compileUrl(path, params, 'ws');
     return new WebSocket(url);
   }
