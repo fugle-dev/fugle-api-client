@@ -30,10 +30,17 @@ describe('Fugle', () => {
   describe('#api', () => {
     it('should invoke axios with compiled url', () => {
       const fugle = new Fugle({ apiToken: 'demo' });
-      const url = 'https://api.fugle.tw/realtime/v0/intraday/quote?apiToken=demo&symbolId=2884';
+      const url = 'https://api.fugle.tw/realtime/v0/intraday/quote?apiToken=demo&oddLot=false&symbolId=2884';
       fugle.api('/intraday/quote', { symbolId: '2884' });
       expect(axios).toBeCalledWith(url);
     });
+  });
+
+  it('should invoke axios with compiled url for intraday odd lot trading', () => {
+    const fugle = new Fugle({ apiToken: 'demo' });
+    const url = 'https://api.fugle.tw/realtime/v0/intraday/quote?apiToken=demo&oddLot=true&symbolId=2884';
+    fugle.api('/intraday/quote', { symbolId: '2884', oddLot: true });
+    expect(axios).toBeCalledWith(url);
   });
 
   describe('#ws', () => {
