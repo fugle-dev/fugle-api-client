@@ -1,6 +1,6 @@
 {
   "name": "fugle",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Fugle API client library for JavaScript",
   "main": "lib/fugle.js",
   "unpkg": "dist/fugle.js",
