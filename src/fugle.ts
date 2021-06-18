@@ -15,7 +15,7 @@ export interface FugleParams {
 export class Fugle {
   private static BASE_REALTIME_URL = 'https://api.fugle.tw/realtime';
   private static BASE_REALTIME_WS = 'wss://api.fugle.tw/realtime';
-  private static VERSION = 'v0';
+  private static VERSION = 'v0.2';
   private _apiToken: string;
 
   constructor(options: FugleOptions = {}) {
