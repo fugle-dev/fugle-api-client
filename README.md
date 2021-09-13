@@ -4,7 +4,11 @@
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][codecov-image]][codecov-url]
 
-> Fugle API client library for JavaScript
+> [DEPRECATED] Fugle API client library for JavaScript
+
+## Deprecation Notice
+
+This package is deprecated. Please use [@fugle/realtime](https://www.npmjs.com/package/@fugle/realtime) instead.
 
 ## Install
 
